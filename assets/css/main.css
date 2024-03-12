@@ -1,0 +1,103 @@
+:root{
+    --color-theme-primary: #2C94D0;
+    --color-theme-primary-hover: #1179B5;
+    --color-theme-secondary: #E30613;
+    --color-default: #444444;
+    --color-body: #f8fcfd;
+    --color-footer: #bdc3c7;
+    --color-white-grey: #f2f6f7;
+    --color-white-grey-500: #e8eced;
+}
+
+body{
+    color: var(--color-default);
+    background-color: var(--color-body);
+    font-size: 14px;
+}
+.btn{
+    outline: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+.text-dark{
+    color: var(--color-default) !important;
+}
+.theme-bg-primary{
+    background-color: var(--color-theme-primary);
+    color: white;
+}
+.theme-bg-primary:hover{
+    background-color: var(--color-theme-secondary);
+    color: white;
+}
+.theme-text{
+    color: var(--color-theme-primary);
+}
+.theme-grey{
+    background-color: var(--color-footer);
+}
+.text-theme-primary{
+    color: var(--color-theme-primary);
+}
+.text-theme-primary:hover{
+    color: var(--color-theme-primary-hover)
+}
+/* *************************************** */
+/* ***************** MENU **************** */
+/* *************************************** */
+.menu a{
+    display: inline-block;
+    color: var(--color-default);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 7px 0;
+}
+.menu a:hover{
+    color:var(--color-theme-primary)
+}
+.menu li.active a{
+    color: var(--color-theme-primary);
+}
+@media( max-width:570px ){
+    .menu{
+        display: none;
+    }
+    .menu a{
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+    .menu li:last-child a{
+        padding-bottom: 10px;
+    }
+    #menu-toggle-button {
+        min-width: 35px !important;
+    }
+}
+@media( min-width:992px ){
+    .menu > li:not(:last-child){
+        margin-right: 25px;
+    }
+}
+
+/* *************************************** */
+/* **************** FOOTER *************** */
+/* *************************************** */
+
+.social-media a {
+    height: 35px;
+    width: 35px;
+    color: var(--color-default);
+    text-decoration: none;
+}
+.social-media a:hover{
+    color: #fff;
+    background-color: var(--color-theme-primary);
+    border-color: var(--color-theme-primary);
+}
+.footer-top{
+    background: var(--color-white-grey);
+}
+.footer-bottom{
+    background-color: var(--color-white-grey-500);
+}
