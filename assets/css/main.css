@@ -81,6 +81,67 @@ body{
 }
 
 /* *************************************** */
+/* *************** SERVICES ************** */
+/* *************************************** */
+.services.page-title{
+    background-image: url('./../img/bg/services.jpg');
+}
+.page-title {
+    position: relative;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.page-title::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    content: '';
+    z-index: 2;
+}
+.page-title h1{
+    position: relative;
+    font-size: 30px;
+    z-index: 3;
+}
+
+.service-item{
+    z-index: 1030;
+    background-color: #fff;
+}
+.service-item::after{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: var(--color-theme-primary);
+    transition: all 0.2s;
+    content: '';
+}
+.service-item:hover{
+    background-color: transparent;
+}
+.service-item:hover::after {
+    left: 0;
+}
+.service-item:hover *{
+    color: white;
+}
+.service-item .price {
+    color: var(--color-theme-primary);
+}
+.service-item .btn:hover {
+    background: var(--color-theme-secondary);
+    color: #fff;
+    border-color: var(--color-theme-secondary) !important;
+}
+/* *************************************** */
 /* **************** FOOTER *************** */
 /* *************************************** */
 
