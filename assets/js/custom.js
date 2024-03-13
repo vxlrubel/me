@@ -36,6 +36,12 @@
 
                 if ( linkHref === currentUrl ) {
                     _this.parent('li').addClass('active');
+                }else{
+                    let modifyUrl = '/me' + linkHref;
+                    if( currentUrl ===  modifyUrl ){
+                        _this.parent('li').addClass('active');
+                        console.log( currentUrl + ' ' + modifyUrl );
+                    }
                 }
                 console.log( currentUrl + ' ' + linkHref );
             });
