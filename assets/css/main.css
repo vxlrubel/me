@@ -81,11 +81,8 @@ body{
 }
 
 /* *************************************** */
-/* *************** SERVICES ************** */
+/* ************** PAGE TITLE ************* */
 /* *************************************** */
-.services.page-title{
-    background-image: url('./../img/bg/services.jpg');
-}
 .page-title {
     position: relative;
 	background-position: center center;
@@ -109,37 +106,24 @@ body{
     z-index: 3;
 }
 
-.service-item{
-    z-index: 1030;
-    background-color: #fff;
+/* *************************************** */
+/* *************** SERVICES ************** */
+/* *************************************** */
+.services.page-title{
+    background-image: url('./../img/bg/services.jpg');
 }
-.service-item::after{
-    position: absolute;
-    top: 0;
-    left: -100%;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background-color: var(--color-theme-primary);
-    transition: all 0.2s;
-    content: '';
+.service-item-title {
+	font-size: 17px;
+	min-height: 41px;
 }
-.service-item:hover{
-    background-color: transparent;
+.service-button {
+	min-width: 96px;
+	font-size: 12px;
 }
-.service-item:hover::after {
-    left: 0;
-}
-.service-item:hover *{
+.service-button:hover{
     color: white;
-}
-.service-item .price {
-    color: var(--color-theme-primary);
-}
-.service-item .btn:hover {
-    background: var(--color-theme-secondary);
-    color: #fff;
-    border-color: var(--color-theme-secondary) !important;
+    background-color: var(--color-theme-primary);
+    border-color: var(--color-theme-primary) !important;
 }
 /* *************************************** */
 /* **************** FOOTER *************** */

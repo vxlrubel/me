@@ -49,43 +49,70 @@
     <!-- service area -->
     <section class="clearfix py-5">
         <div class="container">
+
             <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="position-relative p-3 service-item overflow-hidden">
-                        <img src="./assets/img/services/web-development.webp" alt="wordpress development" class="img-fluid">
-                        <h5 class="my-2">Website Development</h5>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="price"><strong>$250.00</strong></div>
-                            <div class="text-right">
-                                <a href="https://api.whatsapp.com/send?phone=8801625601619&text=Hi,%20Rubel! I want to buy this service" class="btn btn-sm border px-3">Buy Now</a>
+                <!-- single item of service -->
+                <script>
+                    const printService = ( title = 'title', imgSrc, singlePageUrl, price = '0' )=>{
+                        document.write(`
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="bg-white border p-3">
+                                <img src="${imgSrc}" alt="web-development" class="img-fluid">
+                                <h5 class="my-2 text-capitalize service-item-title">${title}</h5>
+                                <div class="d-flex justify-content-between my-2">
+                                    <div class="ratting">
+                                        Ratting: 
+                                        <span class="theme-text d-inline-flex">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </span>
+                                    </div>
+                                    <div class="text-right">Price: <strong class="theme-text">${price}</strong></div>
+                                </div>
+                                <div class="text-right">
+                                    <a href="${singlePageUrl}" class="btn btn-sm border service-button">
+                                        <i class="fa-solid fa-share"></i>
+                                        <span>View Details</span>
+                                    </a>
+                                    <a href="https://api.whatsapp.com/send?phone=8801625601619&text=Hi,%20Rubel! I wanna buy this services. So can we discuss about it?" target="_blank" class="btn btn-sm border service-button">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span>Buy Now</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="position-relative p-3 service-item overflow-hidden">
-                        <img src="./assets/img/services/seo-optimization.webp" alt="wordpress development" class="img-fluid">
-                        <h5 class="my-2">SEO Optimization</h5>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="price"><strong>$150.00</strong></div>
-                            <div class="text-right">
-                                <a href="https://api.whatsapp.com/send?phone=8801625601619&text=Hi,%20Rubel! I want to buy this service" class="btn btn-sm border px-3">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="position-relative p-3 service-item overflow-hidden">
-                        <img src="./assets/img/services/speed-optimization.webp" alt="wordpress development" class="img-fluid">
-                        <h5 class="my-2">Speed Optimization</h5>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="price"><strong>$75.00</strong></div>
-                            <div class="text-right">
-                                <a href="https://api.whatsapp.com/send?phone=8801625601619&text=Hi,%20Rubel! I want to buy this service" class="btn btn-sm border px-3">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        
+                        `);
+                    }
+                    // details-wp-website-setup.html
+                    printService( 'WordPress Website Setup', './assets/img/wp-services/wp-website-setup.webp', './details-wp-website-setup.html', '$50.00' );
+
+                    printService( 'Custom WordPress Theme Development', './assets/img/wp-services/custom-wp-theme-development.webp', './details-custom-wp-theme-development.html', '$200.00' );
+
+                    printService( 'WordPress Plugin Installation and Configuration', './assets/img/wp-services/wp-plugins-install-configure.webp', './details-wp-plugins-install-configure.html', '$30.00' );
+
+                    printService( 'WordPress Website Customization', './assets/img/wp-services/wp-website-customization.webp', './details-wp-website-customization.html', '$100.00' );
+
+                    printService( 'WordPress Website Speed Optimization', './assets/img/wp-services/wp-website-speed-optimization.webp', './details-wp-website-speed-optimization.html', '$75.00' );
+
+                    printService( 'WordPress Security Setup', './assets/img/wp-services/wp-security-setup.webp', './details-wp-security-setup.html', '$50.00' );
+
+                    printService( 'WordPress Website Migration', './assets/img/wp-services/wp-website-migration.webp', './details-wp-website-migration.html', '$100.00' );
+
+                    printService( 'WordPress E-commerce Setup', './assets/img/wp-services/wp-ecommerce-setup.webp', './details-wp-ecommerce-setup.html', '$300.00' );
+
+                    printService( 'WordPress Website Maintenance', './assets/img/wp-services/wp-website-maintenance.webp', './details-wp-website-maintenance.html', '$50.00' );
+
+                    printService( 'WordPress Blog Setup', './assets/img/wp-services/wp-blog-setup.webp', './details-wp-blog-setup.html', '$75.00' );
+
+                    printService( 'WordPress Multilingual Website Setup', './assets/img/wp-services/wp-multilingual-website-setup.webp', './details-wp-multilingual-website-setup.html', '$150.00' );
+
+                    printService( 'WordPress Website Consultation', './assets/img/wp-services/wp-website-consulting.webp', './details-wp-website-consulting.html', '$50.00' );
+
+                </script>
             </div>
         </div>
     </section>
