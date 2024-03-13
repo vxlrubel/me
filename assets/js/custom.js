@@ -28,6 +28,8 @@
                 let _this    = $(this);
                 let linkHref = _this.attr('href');
 
+                
+
                 if ( linkHref.startsWith('.') ){
                     linkHref = linkHref.substring(1);
                 }
@@ -35,6 +37,7 @@
                 if ( linkHref === currentUrl ) {
                     _this.parent('li').addClass('active');
                 }
+                console.log( currentUrl + ' ' + linkHref );
             });
         }
     }
