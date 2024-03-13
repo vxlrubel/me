@@ -40,8 +40,9 @@
                     let modifyUrl = '/me' + linkHref;
                     if( currentUrl ===  modifyUrl ){
                         _this.parent('li').addClass('active');
-                        console.log( currentUrl + ' ' + modifyUrl );
                     }
+                    
+                    console.log( currentUrl + ' ' + modifyUrl );
                 }
                 console.log( currentUrl + ' ' + linkHref );
             });
