@@ -125,6 +125,11 @@ body{
     background-color: var(--color-theme-primary);
     border-color: var(--color-theme-primary) !important;
 }
+.hire-me-sticky {
+	position: sticky;
+	bottom: 0px;
+	float: right;
+}
 /* *************************************** */
 /* **************** FOOTER *************** */
 /* *************************************** */
