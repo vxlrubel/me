@@ -2,9 +2,7 @@
 
 Welcome to my portfolio website repository! This repository hosts the code for my personal portfolio website, showcasing my projects, skills, and experiences. Built with JavaScript, HTML, CSS, Bootstrap, and jQuery, this website is designed to reflect my personality, creativity, and professionalism.
 
-<a href="https://vxlrubel.github.io/me/" target="_blank" style="display:inline-block; padding: 5px; background: red;">   
-        Visit site
-</a>
+- [Visit site](https://vxlrubel.github.io/me/)
 
 ## Table of Contents
 
