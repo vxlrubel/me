@@ -2,6 +2,7 @@
     --color-theme-primary: #2C94D0;
     --color-theme-primary-hover: #1179B5;
     --color-theme-secondary: #E30613;
+    --color-theme-secondary-hover: #C60000;
     --color-default: #444444;
     --color-body: #f8fcfd;
     --color-footer: #bdc3c7;
@@ -46,7 +47,7 @@ body{
     color: var(--color-theme-secondary);
 }
 .text-theme-secondary:hover{
-    color: var(--color-theme-secondary)
+    color: var(--color-theme-secondary-hover)
 }
 
 .read-more-theme{
@@ -63,7 +64,7 @@ body{
     top: 0;
     z-index: -1;
     content: '';
-    transition: all 0.5s;
+    transition: all 0.25s ease-in-out;
     border: none;
 }
 .read-more-theme::after{
