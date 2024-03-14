@@ -56,7 +56,9 @@ body{
 .text-theme-secondary:hover{
     color: var(--color-theme-secondary-hover)
 }
-
+.md-container{
+    max-width: 720px;
+}
 .read-more-theme{
     position: relative;
     z-index: 1030;
@@ -89,6 +91,9 @@ body{
 .read-more-theme:hover::before{
     right: 50%;
     /* right: auto !important; */
+}
+.margin-top-5{
+    top: -5rem;
 }
 /* *************************************** */
 /* ***************** MENU **************** */
