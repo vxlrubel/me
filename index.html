@@ -53,7 +53,7 @@
                         <a href="https://api.whatsapp.com/send?phone=8801625601619&text=Hi,%20Rubel!" class="btn btn-sm px-4 bg-theme-secondary text-white border-none" target="_blank">Hire Me</a>
                     </div>
                     <div class="col-md-5 mb-md-4">
-                        <img src="./assets/img/rubel-mahmud.webp" alt="" class="img-fluid">
+                        <img src="./assets/img/rubel-mahmud.webp" alt="" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -138,51 +138,31 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="px-3 py-4 bg-white mb-4 mb-lg-0 border">
-                        <p class="text-center m-0">
-                            <span class="service-icon text-theme-primary"><i class="fa-solid fa-globe"></i></span>
-                        </p>
-                        <p class="font-weight-bold text-center">WordPress Theme Development</p>
-                        <p class="text-center">
-                            <a href="./details-custom-wp-theme-development.html" class="read-more-theme btn btn-sm border"><i class="fa-regular fa-eye"></i> Read More</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="px-3 py-4 bg-white mb-4 mb-lg-0 border">
-                        <p class="text-center m-0">
-                            <span class="service-icon text-theme-secondary"><i class="fa-solid fa-toolbox"></i></i></span>
-                        </p>
-                        <p class="font-weight-bold text-center">WordPress Website Maintenance</p>
-                        <p class="text-center">
-                            <a href="./details-wp-website-maintenance.html" class="read-more-theme btn btn-sm border"><i class="fa-regular fa-eye"></i> Read More</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="px-3 py-4 bg-white mb-4 mb-lg-0 border">
-                        <p class="text-center m-0">
-                            <span class="service-icon text-theme-primary"><i class="fa-brands fa-shopify"></i></span>
-                        </p>
-                        <p class="font-weight-bold text-center">WordPress E-commerce Setup</p>
-                        <p class="text-center">
-                            <a href="./details-wp-ecommerce-setup.html" class="read-more-theme btn btn-sm border"><i class="fa-regular fa-eye"></i> Read More</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="px-3 py-4 bg-white mb-4 mb-lg-0 border">
-                        <p class="text-center m-0">
-                            <span class="service-icon text-theme-secondary"><i class="fa-brands fa-nfc-symbol"></i></span>
-                        </p>
-                        <p class="font-weight-bold text-center">WordPress Website Migration</p>
-                        <p class="text-center">
-                            <a href="./details-wp-website-migration.html" class="read-more-theme btn btn-sm border"><i class="fa-regular fa-eye"></i> Read More</a>
-                        </p>
-                    </div>
-                </div>
+                <script>
+                    const singleService = ( iconClass = 'fa-globe', title, singlePageLink = '', iconColor = '' )=>{
+                        document.write(`
+                        <div class="col-md-6 col-lg-3">
+                            <div class="px-3 py-4 bg-white mb-4 mb-lg-0 border">
+                                <p class="text-center m-0">
+                                    <span class="service-icon ${iconColor}"><i class="${iconClass}"></i></span>
+                                </p>
+                                <p class="font-weight-bold text-center">${title}</p>
+                                <p class="text-center">
+                                    <a href="${singlePageLink}" class="read-more-theme btn btn-sm border"><i class="fa-regular fa-eye"></i> Read More</a>
+                                </p>
+                            </div>
+                        </div>
+                        `);
+                    }
 
+                    singleService('fa-solid fa-globe', 'WordPress Theme Development', './details-custom-wp-theme-development.html', 'text-theme-primary' );
+
+                    singleService('fa-solid fa-toolbox', 'WordPress Website Maintenance', './details-wp-website-maintenance.html', 'text-theme-secondary' );
+
+                    singleService('fa-brands fa-shopify', 'WordPress E-commerce Setup', './details-wp-ecommerce-setup.html', 'text-theme-primary' );
+
+                    singleService('fa-brands fa-nfc-symbol', 'WordPress Website Migration', './details-wp-website-migration.html', 'text-theme-secondary' );
+                </script>
                 <p class="text-center w-100 d-md-none">
                     <a href="./services.html" class="btn btn-sm border px-3 theme-bg-primary">All Services</a>
                 </p>
