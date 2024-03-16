@@ -38,6 +38,9 @@ body{
 .bg-theme-secondary{
     background-color: var(--color-theme-secondary) !important;
 }
+.bg-theme-body{
+    background-color: var(--color-body);
+}
 .theme-text{
     color: var(--color-theme-primary);
 }
@@ -198,12 +201,12 @@ body{
     align-items: center;
     height: 100px;
     width: 100px;
-    font-size: 70px;
-    border-radius: 50%;
+    font-size: 65px;
+    border-radius: 65%;
     margin-bottom: 1rem;
     border: 3px solid currentColor;
 }
-@media(min-width:768px){
+@media(min-width:576px){
     .service-icon{
         height: 70px;
         width: 70px;
