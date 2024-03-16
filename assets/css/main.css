@@ -23,6 +23,10 @@ body{
 .text-dark{
     color: var(--color-default) !important;
 }
+.btn-theme-primary:hover{
+    background-color: var(--color-theme-primary);
+    color: #fff;
+}
 .theme-bg-primary{
     background-color: var(--color-theme-primary);
     color: white;
