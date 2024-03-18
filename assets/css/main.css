@@ -45,6 +45,9 @@ body{
 .bg-theme-body{
     background-color: var(--color-body);
 }
+.bg-white-alpha{
+    background-color: rgba(255,255,255,0.5);
+}
 .theme-text{
     color: var(--color-theme-primary);
 }
@@ -253,4 +256,14 @@ body{
 }
 .footer-bottom{
     background-color: var(--color-white-grey-500);
+}
+.follow-on-linkein-in{
+    position: sticky;
+    bottom: 0px;
+    z-index: 1030;
+}
+@media(min-width:992px){
+    .linkedin-width{
+        max-width: 720px !important;
+    }
 }
